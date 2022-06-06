@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe Game</title>
+	<link rel="stylesheet" type="text/css" href="tictac.css">
+</head>
+<body>
+	<div id="main">
+		<h1>2-PLAYER <br>TIC TAC TOE</h1>
+
+
+<!-- Rules for playing--> 
+		
+<p id="rules" style="display: none;">Game starts by just tapping on a single box
+<br>
+<br>
+First player starts as <b>Player X</b>
+<br>And
+<br>
+Second player as <b>Player 0</b>
+</p>
+<button id="vrules" class="toggle">VIEW RULES</button>
+<button id="hrules" class="toggle" style="display:none;">HIDE RULES</button>
+
+<br>
+<br>
+<!-- My 3-box grid--> 
+<input type="text" id="box1" onclick="myfunc_3(); myfunc(); " readonly>
+
+<input type="text" id="box2" onclick="myfunc_4(); myfunc(); " readonly>
+
+<input type="text" id="box3" onclick="myfunc_5(); myfunc(); " readonly>
+<br>
+<br>
+
+<input type="text" id="box4" onclick="myfunc_6(); myfunc(); " readonly>
+
+<input type="text" id="box5" onclick="myfunc_7(); myfunc(); " readonly>
+
+<input type="text" id="box6" onclick="myfunc_8(); myfunc(); " readonly>
+<br>
+<br>
+
+<input type="text" id="box7" onclick="myfunc_9(); myfunc(); " readonly>
+
+<input type="text" id="box8" onclick="myfunc_10(); myfunc(); " readonly>
+
+<input type="text" id="box9" onclick="myfunc_11(); myfunc(); " readonly>
+
+
+<!--End of grid-->
+<br>
+<br>
+<br>
+
+
+<!--Reset button-->
+<button id="reset" onclick="myfunc_2()">
+	RESET
+</button>
+<br>
+<br>
+
+<!--Space to show player's turn-->
+<p id="print"></p>
+
+<br>
+Copyright&copy 2022 | Created By Mohammed Awal | Inspired by Geeks, W3 Schools & Kevin Powell
+
+	</div>
+
+
+
+
+<script src="tictac.js"></script>
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function() {
+$("#vrules").click(function() {
+$("#rules").slideDown();
+$("#vrules").hide();
+$("#hrules").show();
+});
+
+});	
+
+
+
+$(document).ready(function() {
+$("#hrules").click(function() {
+$("#rules").slideUp();
+$("#hrules").hide();
+$("#vrules").show();
+});
+
+});	
+
+
+</script>
+</body>
+</html>

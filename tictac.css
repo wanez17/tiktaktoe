@@ -1,0 +1,85 @@
+h1{
+	color: dodgerblue;
+	font-size: 45px;
+	text-shadow: 1px 1px black;
+}
+
+/* Style for the 3x3 grid*/
+
+#box1, #box2, #box3, #box4, #box5, 
+#box6, #box7, #box8, #box9
+{
+	width: 80px;
+	height: 52px;
+	margin: auto;
+	border: 1px solid gray;
+	border-radius: 6px;
+	font-size: 30px;
+	text-align: center;
+	box-shadow: 1px 1px 3px black;
+}
+
+/* Style for the Reset button*/
+#reset{
+	box-sizing: border-box;
+	width: 95px;
+	height: 40px;
+	border: 1px solid dodgerblue;
+	margin: auto;
+	border-radius: 4px;
+	font-family: verdana, geneva, tahoma, sans-serif;
+	background-color: dodgerblue;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+/*STYLES FOR VIEW RULES AND HIDE RULES*/
+.toggle{
+box-sizing: border-box;
+	
+	height: 40px;
+	border: 1px solid dodgerblue;
+	margin: auto;
+	border-radius: 10px;
+	font-family: verdana, geneva, tahoma, sans-serif;
+	background-color: white;
+	color: dodgerblue;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+
+
+/* Styling for the space to show player's turn*/
+#print{
+	font-family: verdana, geneva, tahoma, sans-serif;
+	color: dodgerblue;
+	font-size: 20px;
+	text-shadow: 1px 1px black;
+}
+
+/* Main container*/
+
+#main{
+	background: linear-gradient(dodgerblue, orange);
+	text-align: center;
+	border: 2px solid orangered;
+	background: url(p.jpg);
+}
+
+
+/* Styling for game instructions*/
+
+
+#rules{
+	font-family:  verdana, geneva, tahoma, sans-serif;
+color: black;
+font-size: 17px;
+}
+
+
+
+
