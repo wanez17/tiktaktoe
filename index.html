@@ -3,102 +3,84 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Multi-player Online Tic Tac Toe Game</title>
+	<title>Multi-player Tic Tac Toe Game</title>
 	<link rel="stylesheet" type="text/css" href="tictac.css">
+	<script src="https://kit.fontawesome.com/ac97327f06.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="main">
-		<h1>MULTI-PLAYER <br>TIC TAC TOE</h1>
+		<div class="game-name">
+			<div class="text-bg"><h1>T</h1></div>
+			<div class="text-bg"><h1>i</h1></div>
+			<div class="text-bg"><h1>c</h1></div>
+			<div class="text-bg"><h1>T</h1></div>
+			<div class="text-bg"><h1>a</h1></div>
+			<div class="text-bg"><h1>c</h1></div>
+			<br>
+			<!-- <h2 id="toe">Toe</h2> -->
+		</div>
+		<h3>Toe</h3>
 
+		<!--Space to show player's turn-->
+<p id="print">Click on one box to start</p>
 
-<!-- Rules for playing--> 
-		
-<p id="rules" style="display: none;">Game starts by just tapping on a single box
-<br>
-<br>
-First player starts as <b>Player X</b>
-<br>And
-<br>
-Second player as <b>Player 0</b>
-</p>
-<button id="vrules" class="toggle">VIEW RULES</button>
-<button id="hrules" class="toggle" style="display:none;">HIDE RULES</button>
-
-<br>
-<br>
+<div class="btn-bg">
 <!-- My 3-box grid--> 
 <input type="text" id="box1" onclick="myfunc_3(); myfunc(); " readonly>
 
 <input type="text" id="box2" onclick="myfunc_4(); myfunc(); " readonly>
 
 <input type="text" id="box3" onclick="myfunc_5(); myfunc(); " readonly>
-<br>
-<br>
 
 <input type="text" id="box4" onclick="myfunc_6(); myfunc(); " readonly>
 
 <input type="text" id="box5" onclick="myfunc_7(); myfunc(); " readonly>
 
 <input type="text" id="box6" onclick="myfunc_8(); myfunc(); " readonly>
-<br>
-<br>
 
 <input type="text" id="box7" onclick="myfunc_9(); myfunc(); " readonly>
 
 <input type="text" id="box8" onclick="myfunc_10(); myfunc(); " readonly>
 
 <input type="text" id="box9" onclick="myfunc_11(); myfunc(); " readonly>
-
-
 <!--End of grid-->
-<br>
-<br>
-<br>
-
-
+</div>
 <!--Reset button-->
 <button id="reset" onclick="myfunc_2()">
 	RESET
 </button>
-<br>
-<br>
-
-<!--Space to show player's turn-->
-<p id="print"></p>
-
-<br>
-Copyright&copy 2022 | Created By Mohammed Awal | Inspired by Geeks for Geeks & W3 Schools
-
+<div class="myhandles">
+		<a href="https://www.linkedin.com/in/mohammed-awal-dev" target="_blank" title="Linkedin Profile"><i class="fa-brands fa-linkedin"></i></a>
+		<a href="https://github.com/wanez17" title="Github repository"><i class="fa-brands fa-github"></i></a>
+		<a href="https://mohammedawaldev.netlify.app" title="Portfolio website"><i class="fa-solid fa-globe"></i></a>
+	</div>
 	</div>
 
+	<div class="o-style">
+	<h1>O</h1>	
+	</div>
 
+	<div class="x-style">
+	<h1>X</h1>	
+	</div>
+
+<!-- Creating a DIV for animating the background -->
+	<div class="area">
+            <ul class="circles">
+                    <li>O</li>
+                    <li>X</li>
+                    <li>O</li>
+                    <li></li>
+                    <li>X</li>
+                    <li>O</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>X</li>
+            </ul>
+    </div>
 
 
 <script src="tictac.js"></script>
-<script src="jquery.js"></script>
-
-<script>
-$(document).ready(function() {
-$("#vrules").click(function() {
-$("#rules").slideDown();
-$("#vrules").hide();
-$("#hrules").show();
-});
-
-});	
-
-
-
-$(document).ready(function() {
-$("#hrules").click(function() {
-$("#rules").slideUp();
-$("#hrules").hide();
-$("#vrules").show();
-});
-
-});	
-
-
-</script>
 </body>
 </html>
